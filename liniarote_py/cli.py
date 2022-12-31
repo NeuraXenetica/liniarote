@@ -46,17 +46,10 @@ from sly import Lexer, Parser
 # █ Import other modules from the WorkforceSim package
 # ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-# Imports of the form "from . import X as x" have been added for use
-# in the distributed package; imports of the form "import X as x" are
-# retained for use when debugging the modules in VS Code.
-
-if __name__ == "__main__":
+try:
+    from . import config as cfg
+except:
     import config as cfg
-else:
-    try:
-        from . import config as cfg
-    except:
-        import config as cfg
 
 
 # ██████████████████████████████████████████████████████████████████████
