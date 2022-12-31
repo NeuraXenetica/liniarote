@@ -51,8 +51,8 @@ ___
 
 Axioms of identity and grouping:
 
-`Ƿ = 0 + Ƿ`
-`-Ƿ = 0 - Ƿ`
+`Ƿ = 0 + Ƿ`\
+`-Ƿ = 0 - Ƿ`\
 `n = n + (Ƿ - Ƿ), where n is any real number`
 
 Axioms of non-associativity:
