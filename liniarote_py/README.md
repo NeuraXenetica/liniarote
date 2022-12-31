@@ -1,4 +1,4 @@
-# LINIAROTE: A PROGRAMMING LANGUAGE FOR TRANSVALENT MATHEMATICS
+# LINIAROTE: A programming language for transvalent mathematics
 
 The Liniarote package is a Python implementation of a command-line interface
 for the Liniarote programming language, an open-source programming language 
@@ -51,9 +51,9 @@ ___
 
 Axioms of identity and grouping:
 
-Ƿ = 0 + Ƿ
--Ƿ = 0 - Ƿ
-n = n + (Ƿ - Ƿ), where n is any real number
+`Ƿ = 0 + Ƿ`
+`-Ƿ = 0 - Ƿ`
+`n = n + (Ƿ - Ƿ), where n is any real number`
 
 Axioms of non-associativity:
 
