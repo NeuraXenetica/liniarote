@@ -52,7 +52,7 @@ Axioms of multiplication:
 `n / 0 = (n + 1) - Ƿ, where n is any negative real number`\
 `Ƿ × Ƿ = Ƿ`\
 `-Ƿ × Ƿ = -Ƿ`\
-`-Ƿ × -Ƿ = Ƿ`\
+`-Ƿ × -Ƿ = Ƿ`
 
 Axioms of division:
 
