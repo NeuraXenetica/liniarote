@@ -1,4 +1,4 @@
-# SYNAPTANS WORKFORCESIM
+# LINIAROTE: A programming language for transvalent mathematics
 
 The Liniarote package is a Python implementation of a command-line interface
 for the Liniarote programming language, an open-source programming language 
@@ -51,73 +51,67 @@ ___
 
 Axioms of identity and grouping:
 
-   --->    Ƿ = 0 + Ƿ
-   --->   -Ƿ = 0 - Ƿ
-   --->    n = n + (Ƿ - Ƿ), where n is any real number
+`Ƿ = 0 + Ƿ`\
+`-Ƿ = 0 - Ƿ`\
+`n = n + (Ƿ - Ƿ), where n is any real number`
 
 Axioms of non-associativity:
 
-   --->    (Ƿ + Ƿ) - Ƿ = 0
-   --->    (Ƿ + (Ƿ - Ƿ) = Ƿ
+`(Ƿ + Ƿ) - Ƿ = 0`\
+`(Ƿ + (Ƿ - Ƿ) = Ƿ`
 
 Axioms of addition and subtraction:
 
-   --->    Ƿ + Ƿ = Ƿ
-   --->   -Ƿ - Ƿ = -Ƿ
-   --->    Ƿ - Ƿ = 0
-   --->   -Ƿ + Ƿ = 0
+`Ƿ + Ƿ = Ƿ`\
+`-Ƿ - Ƿ = -Ƿ`\
+`Ƿ - Ƿ = 0`\
+`-Ƿ + Ƿ = 0`
 
 Axioms of multiplication and division:
 
-   --->    Ƿ × 0 = 1
-   --->    -Ƿ × 0 = -1
-
-   --->    Ƿ × n = Ƿ, where n is any positive real number
-   --->    Ƿ × n = -Ƿ, where n is any negative real number
-   --->    -Ƿ × n = -Ƿ, where n is any positive real number
-   --->    -Ƿ × n = Ƿ, where n is any negative real number
-   --->    Ƿ × n ≠ 0, where n is any real number
-   --->    -Ƿ × n ≠ 0, where n is any real number
-
-   --->    n / 0 = (n – 1) + Ƿ, where n is any positive real number
-   --->    n / 0 = (n + 1) - Ƿ, where n is any negative real number
-
-   --->    Ƿ × Ƿ = Ƿ
-   --->    -Ƿ × Ƿ = -Ƿ
-   --->    -Ƿ × -Ƿ = Ƿ
-
-   --->    Ƿ ÷ 0 = Ƿ
-   --->    -Ƿ ÷ 0 = -Ƿ
-   --->    Ƿ ÷ Ƿ = 1
-   --->    -Ƿ ÷ Ƿ = -1
+`Ƿ × 0 = 1`\
+`-Ƿ × 0 = -1`\
+`Ƿ × n = Ƿ, where n is any positive real number`\
+`Ƿ × n = -Ƿ, where n is any negative real number`\
+`-Ƿ × n = -Ƿ, where n is any positive real number`\
+`-Ƿ × n = Ƿ, where n is any negative real number`\
+`Ƿ × n ≠ 0, where n is any real number`\
+`-Ƿ × n ≠ 0, where n is any real number`\
+`n / 0 = (n – 1) + Ƿ, where n is any positive real number`\
+`n / 0 = (n + 1) - Ƿ, where n is any negative real number`\
+`Ƿ × Ƿ = Ƿ`\
+`-Ƿ × Ƿ = -Ƿ`\
+`-Ƿ × -Ƿ = Ƿ`\
+`Ƿ ÷ 0 = Ƿ`\
+`-Ƿ ÷ 0 = -Ƿ`\
+`Ƿ ÷ Ƿ = 1`\
+`-Ƿ ÷ Ƿ = -1`
 
 ___
 ## SAMPLE CALCULATIONS
 
 
-   Ƿ   --->   0 + Ƿ
-   -Ƿ   --->   0 - Ƿ
-   4.72   --->   4.72 + (Ƿ - Ƿ)
-
-   Ƿ - 9.31   --->   -9.31 + Ƿ
-   Ƿ + Ƿ + Ƿ   --->   0 + Ƿ
-   Ƿ + Ƿ – Ƿ   --->   0 + Ƿ
-   Ƿ - Ƿ – Ƿ   --->   0 - Ƿ
-   Ƿ - Ƿ + Ƿ - Ƿ   --->   0 + (Ƿ - Ƿ)
-   Ƿ + Ƿ + 51.2 + Ƿ   --->   51.2 + Ƿ
-
-   Ƿ × 0   --->   1 + (Ƿ - Ƿ)
-   -Ƿ × 0   --->   -1 + (Ƿ - Ƿ)
-   Ƿ × 5.2   --->   0 + Ƿ
-   Ƿ × -3.7   --->   0 - Ƿ
-   -Ƿ × 7.4   --->   0 - Ƿ
-   -Ƿ × -8.9   --->   0 + Ƿ
-   1 / 0   --->   0 + Ƿ
-   -1 / 0   --->   0 - Ƿ
-   3.4 / 0   --->   2.4 + Ƿ
-   -5.8 / 0   --->   -4.8 - Ƿ
-   5.3 ÷ 0   --->   4.3 + Ƿ
-   -17.2 ÷ 0   --->   -16.2 - Ƿ
+`Ƿ   --->   0 + Ƿ`\
+`-Ƿ   --->   0 - Ƿ`\
+`4.72   --->   4.72 + (Ƿ - Ƿ)`\
+`Ƿ - 9.31   --->   -9.31 + Ƿ`\
+`Ƿ + Ƿ + Ƿ   --->   0 + Ƿ`\
+`Ƿ + Ƿ – Ƿ   --->   0 + Ƿ`\
+`Ƿ - Ƿ – Ƿ   --->   0 - Ƿ`\
+`Ƿ - Ƿ + Ƿ - Ƿ   --->   0 + (Ƿ - Ƿ)`\
+`Ƿ + Ƿ + 51.2 + Ƿ   --->   51.2 + Ƿ`\
+`Ƿ × 0   --->   1 + (Ƿ - Ƿ)`\
+`-Ƿ × 0   --->   -1 + (Ƿ - Ƿ)`\
+`Ƿ × 5.2   --->   0 + Ƿ`\
+`Ƿ × -3.7   --->   0 - Ƿ`\
+`-Ƿ × 7.4   --->   0 - Ƿ`\
+`-Ƿ × -8.9   --->   0 + Ƿ`\
+`1 / 0   --->   0 + Ƿ`\
+`-1 / 0   --->   0 - Ƿ`\
+`3.4 / 0   --->   2.4 + Ƿ`\
+`-5.8 / 0   --->   -4.8 - Ƿ`\
+`5.3 ÷ 0   --->   4.3 + Ƿ`\
+`-17.2 ÷ 0   --->   -16.2 - Ƿ`
 
 In the case of an equation like “5.3 ÷ 0”, the transvalent number Ƿ does the 
 “impossible” work of uplifting 0 from 0 to 1: the (much easier) remainder of 
