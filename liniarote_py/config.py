@@ -1,13 +1,68 @@
-# SYNAPTANS WORKFORCESIM
+# -*- coding: utf-8 -*-
 
+# ╔════════════════════════════════════════════════════════════════════╗
+# ║   LINIAROTE: The programming language for performing operations    ║
+# ║   in transvalent mathematics                                       ║
+# ║                                                                    ║
+# ║   Developed by Matthew E. Gladden                                  ║
+# ║   Software and documentation ©2022-2023 Cognitive Firewall LLC     ║
+# ║                                                                    ║
+# ║   This software is made available for use under                    ║
+# ║   GNU General Public License Version 3                             ║
+# ║   (please see https://www.gnu.org/licenses/gpl-3.0.html).          ║
+# ╚════════════════════════════════════════════════════════════════════╝
+
+"""
+This module stores configuration settings and variables that are used by
+other modules.
+"""
+
+# ██████████████████████████████████████████████████████████████████████
+# ██████████████████████████████████████████████████████████████████████
+# ███
+# ███ DEFINE VARIABLES
+# ███
+# ██████████████████████████████████████████████████████████████████████
+# ██████████████████████████████████████████████████████████████████████
+
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# █ Transvalent symbols
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+transval_sym_pos = "Ƿ"
+transval_sym_neg = "-" + transval_sym_pos
+
+
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+# █ Text for display
+# ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+# ----------------------------------------------------------------------
+# Introductory text to be displayed whenever the package is run.
+# ----------------------------------------------------------------------
+
+intro_text = \
+"""
+-----------------------------------------------------------------------------
+****** LINIAROTE: The programming language for transvalent mathematics ******
+To enter transvalent numbers, use the letter 'w' to represent the 'Ƿ' symbol.
+For more detailed instructions, please type 'help’ at the command prompt.
+-----------------------------------------------------------------------------
+"""
+
+
+# ----------------------------------------------------------------------
+# Help text to be displayed whenever requested by the user.
+# ----------------------------------------------------------------------
+
+help_text = \
+"""
+-----------------------------------------------------------------------------
 The Liniarote package is a Python implementation of a command-line interface
 for the Liniarote programming language, an open-source programming language 
 developed specifically to facilitate operations in transvalent mathematics.
 
-The software is developed by Matthew E. Gladden (with support from Cognitive Firewall LLC and NeuraXenetica LLC) and is made available for use under GNU General Public License Version 3. Please see https://www.gnu.org/licenses/gpl-3.0.html.
-
-___
-## AN OVERVIEW OF TRANSVALENT MATHEMATICS
+>>>>> AN OVERVIEW OF TRANSVALENT MATHEMATICS <<<<<
 
 The distinguishing characteristic of transvalent mathematics is that division 
 by zero is permitted and generates results calculated according to certain 
@@ -46,57 +101,54 @@ in the last 200 years include those of the Riemann sphere (which extends the
 complex plane by adding a point at infinity) and the projectively extended 
 real line.
 
-___
-## KEY AXIOMS OF TRANSVALENT MATHEMATICS
+>>>>> KEY AXIOMS OF TRANSVALENT MATHEMATICS <<<<<
 
-Axioms of identity and grouping:
+   Axioms of identity and grouping:
 
    --->    Ƿ = 0 + Ƿ
    --->   -Ƿ = 0 - Ƿ
    --->    n = n + (Ƿ - Ƿ), where n is any real number
 
-Axioms of non-associativity:
+   Axioms of non-associativity:
 
    --->    (Ƿ + Ƿ) - Ƿ = 0
    --->    (Ƿ + (Ƿ - Ƿ) = Ƿ
 
-Axioms of addition and subtraction:
+   Axioms of addition and subtraction:
 
    --->    Ƿ + Ƿ = Ƿ
    --->   -Ƿ - Ƿ = -Ƿ
    --->    Ƿ - Ƿ = 0
    --->   -Ƿ + Ƿ = 0
 
-Axioms of multiplication and division:
+   Axioms of multiplication and division:
 
    --->    Ƿ × 0 = 1
-   --->    -Ƿ × 0 = -1
+   --->   -Ƿ × 0 = -1
 
    --->    Ƿ × n = Ƿ, where n is any positive real number
    --->    Ƿ × n = -Ƿ, where n is any negative real number
-   --->    -Ƿ × n = -Ƿ, where n is any positive real number
-   --->    -Ƿ × n = Ƿ, where n is any negative real number
+   --->   -Ƿ × n = -Ƿ, where n is any positive real number
+   --->   -Ƿ × n = Ƿ, where n is any negative real number
    --->    Ƿ × n ≠ 0, where n is any real number
-   --->    -Ƿ × n ≠ 0, where n is any real number
+   --->   -Ƿ × n ≠ 0, where n is any real number
 
    --->    n / 0 = (n – 1) + Ƿ, where n is any positive real number
    --->    n / 0 = (n + 1) - Ƿ, where n is any negative real number
 
    --->    Ƿ × Ƿ = Ƿ
-   --->    -Ƿ × Ƿ = -Ƿ
-   --->    -Ƿ × -Ƿ = Ƿ
+   --->   -Ƿ × Ƿ = -Ƿ
+   --->   -Ƿ × -Ƿ = Ƿ
 
    --->    Ƿ ÷ 0 = Ƿ
-   --->    -Ƿ ÷ 0 = -Ƿ
+   --->   -Ƿ ÷ 0 = -Ƿ
    --->    Ƿ ÷ Ƿ = 1
-   --->    -Ƿ ÷ Ƿ = -1
+   --->   -Ƿ ÷ Ƿ = -1
 
-___
-## SAMPLE CALCULATIONS
-
+>>>>> SAMPLE CALCULATIONS <<<<<
 
    Ƿ   --->   0 + Ƿ
-   -Ƿ   --->   0 - Ƿ
+  -Ƿ   --->   0 - Ƿ
    4.72   --->   4.72 + (Ƿ - Ƿ)
 
    Ƿ - 9.31   --->   -9.31 + Ƿ
@@ -107,17 +159,17 @@ ___
    Ƿ + Ƿ + 51.2 + Ƿ   --->   51.2 + Ƿ
 
    Ƿ × 0   --->   1 + (Ƿ - Ƿ)
-   -Ƿ × 0   --->   -1 + (Ƿ - Ƿ)
+  -Ƿ × 0   --->   -1 + (Ƿ - Ƿ)
    Ƿ × 5.2   --->   0 + Ƿ
    Ƿ × -3.7   --->   0 - Ƿ
-   -Ƿ × 7.4   --->   0 - Ƿ
-   -Ƿ × -8.9   --->   0 + Ƿ
+  -Ƿ × 7.4   --->   0 - Ƿ
+  -Ƿ × -8.9   --->   0 + Ƿ
    1 / 0   --->   0 + Ƿ
-   -1 / 0   --->   0 - Ƿ
+  -1 / 0   --->   0 - Ƿ
    3.4 / 0   --->   2.4 + Ƿ
-   -5.8 / 0   --->   -4.8 - Ƿ
+  -5.8 / 0   --->   -4.8 - Ƿ
    5.3 ÷ 0   --->   4.3 + Ƿ
-   -17.2 ÷ 0   --->   -16.2 - Ƿ
+  -17.2 ÷ 0   --->   -16.2 - Ƿ
 
 In the case of an equation like “5.3 ÷ 0”, the transvalent number Ƿ does the 
 “impossible” work of uplifting 0 from 0 to 1: the (much easier) remainder of 
@@ -126,8 +178,7 @@ that increase the value from 1 to that of the number that was divided by 0.
 In that case, the relevant real number is 4.3, which increases 1 to a 
 targeted sum of 5.3.
 
-___
-## INPUT FORMAT
+>>>>> INPUT FORMAT <<<<<
 
 On the Liniarote command line, the symbol “Ƿ” (Unicode: U+01F7; UTF-8: C7 B7) 
 can be inputted by typing the lowercase letter “w”, which will be 
@@ -144,14 +195,12 @@ Inputted constants recognized by Liniarote include “e” and “pi”.
 Division is not yet implemented. The operators currently available for use 
 are: + - * ( )
 
-___
-## REQUIREMENTS
+>>>>> REQUIREMENTS <<<<<
 
 Please see the “requirements.txt” file for a list of other Python packages 
 whose installation is a prerequisite for the proper functioning of Liniarote.
 
-___
-## INSPIRATION AND ACKNOWLEDGMENTS
+>>>>> INSPIRATION AND ACKNOWLEDGMENTS <<<<<
 
 Within the world of the “Utopian Confederation” RPG series, the foundational 
 text in the field of transvalent mathematics as such was published by a team 
@@ -161,4 +210,7 @@ Utopian Commonwealth, as described in ThomasMore’s “Utopia” (1516). Liniar
 was created and is maintained by Matthew E. Gladden.
 
 Liniarote code and documentation ©2022-23 Cognitive Firewall LLC
+-----------------------------------------------------------------------------
+"""
 
+# ••••-••••-••••-••••-••••-••••-••••--••••-••••-••••-••••-••••-••••-••••
