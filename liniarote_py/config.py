@@ -59,8 +59,8 @@ help_text = \
 """
 -----------------------------------------------------------------------------
 The Liniarote package is a Python implementation of a command-line interface
-for the Liniarote programming language, an open-source programming language 
-developed specifically to facilitate operations in transvalent mathematics.
+for the Liniarote programming language, an open-source language developed 
+to facilitate operations in transvalent mathematics.
 
 >>>>> AN OVERVIEW OF TRANSVALENT MATHEMATICS <<<<<
 
@@ -91,7 +91,7 @@ and that calculations that attempt to divide by zero are inherently
 “Ƿ = 1 ÷ 0” and “Ƿ × 0 = 1” are no more intrinsically absurd than (for 
 example) the definitions that “i = √(-1)” and “i² = -1”, which are 
 foundations of the imaginary and complex number systems – and which have 
-would facilitate countless theoretical and practical advances in diverse 
+facilitated countless theoretical and practical advances in diverse 
 scientific and technological spheres. The establishment of systems like that 
 found in transvalent mathematics simply required clear formulations of the 
 meaning of “dividing by zero” and rules for interpreting the results that are
@@ -101,9 +101,9 @@ in the last 200 years include those of the Riemann sphere (which extends the
 complex plane by adding a point at infinity) and the projectively extended 
 real line.
 
->>>>> KEY AXIOMS OF TRANSVALENT MATHEMATICS <<<<<
+>>>>> SELECTED AXIOMS OF TRANSVALENT MATHEMATICS <<<<<
 
-   Axioms of identity and grouping:
+   Axioms of identity:
 
    --->    Ƿ = 0 + Ƿ
    --->   -Ƿ = 0 - Ƿ
@@ -121,7 +121,7 @@ real line.
    --->    Ƿ - Ƿ = 0
    --->   -Ƿ + Ƿ = 0
 
-   Axioms of multiplication and division:
+   Axioms of multiplication:
 
    --->    Ƿ × 0 = 1
    --->   -Ƿ × 0 = -1
@@ -133,52 +133,46 @@ real line.
    --->    Ƿ × n ≠ 0, where n is any real number
    --->   -Ƿ × n ≠ 0, where n is any real number
 
-   --->    n / 0 = (n – 1) + Ƿ, where n is any positive real number
-   --->    n / 0 = (n + 1) - Ƿ, where n is any negative real number
-
    --->    Ƿ × Ƿ = Ƿ
    --->   -Ƿ × Ƿ = -Ƿ
    --->   -Ƿ × -Ƿ = Ƿ
 
+   Axioms of division:
+
+   --->    n ÷ 0 = Ƿ, where n is any positive real number
+   --->    n ÷ 0 = -Ƿ, where n is any negative real number
+   --->    0 ÷ 0 = 1
    --->    Ƿ ÷ 0 = Ƿ
    --->   -Ƿ ÷ 0 = -Ƿ
-   --->    Ƿ ÷ Ƿ = 1
-   --->   -Ƿ ÷ Ƿ = -1
 
->>>>> SAMPLE CALCULATIONS <<<<<
+   --->    Ƿ ÷ n = Ƿ, where n is any positive real number
+   --->    Ƿ ÷ n = -Ƿ, where n is any negative real number
+   --->   -Ƿ ÷ n = -Ƿ, where n is any positive real number
+   --->   -Ƿ ÷ n = Ƿ, where n is any negative real number
 
-   Ƿ   --->   0 + Ƿ
-  -Ƿ   --->   0 - Ƿ
-   4.72   --->   4.72 + (Ƿ - Ƿ)
+   --->    n ÷ Ƿ = 0, where n is any positive real number
+   --->    n ÷ Ƿ = -1, where n is any negative real number
+   --->    n ÷ -Ƿ = -1, where n is any positive real number
+   --->    n ÷ -Ƿ = 0, where n is any negative real number
 
-   Ƿ - 9.31   --->   -9.31 + Ƿ
-   Ƿ + Ƿ + Ƿ   --->   0 + Ƿ
-   Ƿ + Ƿ – Ƿ   --->   0 + Ƿ
-   Ƿ - Ƿ – Ƿ   --->   0 - Ƿ
-   Ƿ - Ƿ + Ƿ - Ƿ   --->   0 + (Ƿ - Ƿ)
-   Ƿ + Ƿ + 51.2 + Ƿ   --->   51.2 + Ƿ
+   --->    0 ÷ Ƿ = 0
+   --->    0 ÷ -Ƿ = -1
 
-   Ƿ × 0   --->   1 + (Ƿ - Ƿ)
-  -Ƿ × 0   --->   -1 + (Ƿ - Ƿ)
-   Ƿ × 5.2   --->   0 + Ƿ
-   Ƿ × -3.7   --->   0 - Ƿ
-  -Ƿ × 7.4   --->   0 - Ƿ
-  -Ƿ × -8.9   --->   0 + Ƿ
-   1 / 0   --->   0 + Ƿ
-  -1 / 0   --->   0 - Ƿ
-   3.4 / 0   --->   2.4 + Ƿ
-  -5.8 / 0   --->   -4.8 - Ƿ
-   5.3 ÷ 0   --->   4.3 + Ƿ
-  -17.2 ÷ 0   --->   -16.2 - Ƿ
+   --->    Ƿ ÷ Ƿ = Ƿ
+   --->   -Ƿ ÷ Ƿ = -Ƿ
+   --->   -Ƿ ÷ -Ƿ = Ƿ
+   --->    Ƿ ÷ -Ƿ = -Ƿ
 
-In the case of an equation like “5.3 ÷ 0”, the transvalent number Ƿ does the 
-“impossible” work of uplifting 0 from 0 to 1: the (much easier) remainder of 
-the work is then performed by Ƿ’s “assistants,” in the form of real numbers 
-that increase the value from 1 to that of the number that was divided by 0. 
-In that case, the relevant real number is 4.3, which increases 1 to a 
-targeted sum of 5.3.
+>>>>> PACKAGE EXECUTION AND INPUT FORMAT <<<<<
 
->>>>> INPUT FORMAT <<<<<
+The manner of activating the Liniarote command-line interface will depend on
+one's operating system and Python installation. In Windows, for example, one
+may be able to run the command-line interface module (cli.py) by typing at
+the PowerShell prompt or Visual Studio Code terminal prompt from within the
+appropriate folder:
+
+   python -m pip install liniarote
+   python -m liniarote.cli
 
 On the Liniarote command line, the symbol “Ƿ” (Unicode: U+01F7; UTF-8: C7 B7) 
 can be inputted by typing the lowercase letter “w”, which will be 
@@ -209,7 +203,7 @@ programming language was named after one of the 54 cities of the ancient
 Utopian Commonwealth, as described in ThomasMore’s “Utopia” (1516). Liniarote 
 was created and is maintained by Matthew E. Gladden.
 
-Liniarote code and documentation ©2022-23 Cognitive Firewall LLC
+Liniarote code and documentation ©2022-2023 Cognitive Firewall LLC
 -----------------------------------------------------------------------------
 """
 
