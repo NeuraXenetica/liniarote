@@ -106,7 +106,7 @@ At the moment, the CLI is capable of processing only simple requested calculatio
 `<LINIAROTE:>  (w*4.5) - (w-25) - (w/32) + (pi+w)`\
 `<LINIAROTE:>  pi*w`\
 `<LINIAROTE:>  (e+w)/(pi+1)`\
-`<LINIAROTE:>  w+8*C`\
+`<LINIAROTE:>  w+8*C`
 
 An error message will be generated if an inputted calculations requires the use of operations or values not currently implemented in the Liniarote CLI.
 
